@@ -1,0 +1,1 @@
+Tensors Exercises: https://github.com/udacity/deep-learning-v2-pytorch/blob/master/intro-to-pytorch/Part%201%20-%20Tensors%20in%20PyTorch%20(Exercises).ipynb
