@@ -1,113 +1,111 @@
-# PyTorch Journey 
+# PyTorch Journey
 
-A structured hands-on learning path to master PyTorch from basics to advanced deep learning concepts.
+A structured, hands-on learning path to master PyTorch — from tensor basics to building real deep learning models.
 
 ---
 
 ## Repository Structure
 
+```
 pytorch-journey/
-
-### 01. Tensor Fundamentals
-- 01_creating_tensors.ipynb  
-- 02_tensor_attributes.ipynb  
-- 03_indexing_slicing.ipynb  
-- 04_reshape_view.ipynb  
-- 05_broadcasting.ipynb  
-- 06_matrix_multiplication.ipynb  
-- 07_tensor_exercises.ipynb  
-- notes.md  
-
-### 02. Autograd
-- 01_requires_grad.ipynb  
-- 02_computational_graph.ipynb  
-- 03_backward.ipynb  
-- 04_gradient_descent.ipynb  
-- notes.md  
-
-### 03. Neural Network Basics
-- 01_linear_regression.ipynb  
-- 02_logistic_regression.ipynb  
-- 03_nn_module.ipynb  
-- 04_loss_functions.ipynb  
-- 05_optimizers.ipynb  
-- notes.md  
-
-### 04. Training Pipeline
-- 01_dataset.ipynb  
-- 02_dataloader.ipynb  
-- 03_training_loop.ipynb  
-- 04_validation_loop.ipynb  
-- notes.md  
-
-### 05. Computer Vision
-- 01_mnist_classifier.ipynb  
-- 02_fashion_mnist.ipynb  
-- 03_cnn_basics.ipynb  
-- notes.md  
-
-### 06. NLP Basics
-- 01_embeddings.ipynb  
-- 02_rnn_lstm.ipynb  
-- notes.md  
-
-### 07. Transformers
-- 01_attention.ipynb  
-- 02_transformer_basics.ipynb  
-- 03_huggingface.ipynb  
-- notes.md  
-
-### 08. Projects
-- project_01_digit_classifier/  
-- project_02_image_classifier/  
-- project_03_sentiment_analysis/  
-- README.md  
-
-### Resources
-- cheatsheets/  
-- references.md  
+├── tensor-fundamentals/          # Core tensor operations & exercises
+│   ├── 01_creating_tensors.ipynb
+│   ├── 02_creating_tensors.ipynb
+│   ├── 03_creating_tensors.ipynb
+│   ├── 04_tensor_indexing.ipynb
+│   ├── 05_tensor_slicing.ipynb
+│   ├── 06_tensors_index_slice_practice.ipynb
+│   ├── 07_tensors_reshaping.ipynb
+│   ├── 08_tensors_squeeze_unsqueeze.ipynb
+│   ├── 09_tensors_transpose.ipynb
+│   ├── 10_tensors_permute.ipynb
+│   ├── 11_tensors_multiplication.ipynb
+│   ├── 12_tensors_broadcasting.ipynb
+│   ├── 13_aggregate_methods.ipynb
+│   ├── 14_tensors_exercises.ipynb
+│   └── tensor-exercises/
+│
+├── models/
+│   ├── regression/               # Linear regression models
+│   │   ├── basic_linear_regression_model.ipynb
+│   │   ├── single_linear_regression_model.ipynb
+│   │   ├── multi_linear_regression_model.ipynb
+│   │   ├── multi_weight_linear_regression_model.ipynb
+│   │   ├── car_price_prediction_model.ipynb
+│   │   ├── house_price_prediction_model.ipynb
+│   │   ├── salary_prediction_model.ipynb
+│   │   └── test_linear_regression_model.ipynb
+│   │
+│   ├── classification/           # Classification models
+│   │   ├── non_linear_classification_model.ipynb
+│   │   └── helpers/
+│   │
+│   └── concepts/                 # Core ML concepts
+│       └── normalization/
+│           ├── normalization-model.ipynb
+│           └── unnormalization-model.ipynb
+│
+├── homework.md
+├── questions.md
+└── resources.md
+```
 
 ---
 
-## Purpose
+## What's Covered
 
-This repository is designed to help you:
+### Tensor Fundamentals
+Everything you need to work confidently with PyTorch tensors:
+- Creating tensors in multiple ways
+- Indexing, slicing, and reshaping
+- Squeeze, unsqueeze, transpose, and permute
+- Matrix multiplication and broadcasting
+- Aggregate methods (min, max, mean, sum, etc.)
+- Hands-on exercises to reinforce concepts
 
-- Understand **PyTorch fundamentals** from scratch  
-- Learn **deep learning concepts step-by-step**  
-- Build real **computer vision & NLP models**  
-- Work on **end-to-end projects**
+### Regression Models
+End-to-end regression model implementations:
+- **Basic & Single Linear Regression** — fundamentals of gradient descent and loss
+- **Multi-feature Regression** — predicting with multiple input features
+- **Real-world datasets** — car price, house price, and salary prediction
+
+### Classification Models
+- **Non-linear Classification** — using activation functions to solve non-linear decision boundaries
+
+### Concepts
+- **Normalization vs Unnormalization** — understanding why and how to normalize inputs for stable training
 
 ---
 
 ## Learning Path
 
-1. Tensor Fundamentals
-2. Autograd & Gradients
-3. Neural Network Basics
-4. Training Pipelines
-5. Computer Vision
-6. NLP Basics
-7. Transformers
-8. Real-world Projects
+1. **Tensor Fundamentals** — start here; get comfortable with the building block of all PyTorch code
+2. **Regression Models** — learn the training loop with simple, interpretable problems
+3. **Concepts (Normalization)** — understand data preprocessing before moving to classification
+4. **Classification Models** — apply everything to non-linear problems
 
 ---
 
-## Projects Included
+## Getting Started
 
-- Digit Classifier (MNIST)
-- Image Classifier (CNN based)
-- Sentiment Analysis (NLP)
+### Prerequisites
+```bash
+pip install torch torchvision jupyter matplotlib numpy pandas
+```
+
+### Run Notebooks
+```bash
+jupyter notebook
+```
+Navigate to any folder and open the `.ipynb` files in order.
 
 ---
 
 ## Resources
 
-Check `/resources` for:
-
-- Cheat sheets
-- Reference notes
-- Extra learning material
+See [`resources.md`](./resources.md) for curated links, cheat sheets, and reference material.  
+See [`homework.md`](./homework.md) for practice exercises and supplementary tasks.  
+See [`questions.md`](./questions.md) for conceptual questions to test your understanding.
 
 ---
 
@@ -115,6 +113,8 @@ Check `/resources` for:
 
 By the end of this repo, you should be able to:
 
-- Build and train neural networks in PyTorch
-- Understand how modern AI models work
-- Create your own deep learning projects
+- Manipulate tensors with full confidence
+- Implement linear and non-linear models from scratch
+- Understand the full PyTorch training loop
+- Apply data preprocessing (normalization) correctly
+- Build and extend your own deep learning models
