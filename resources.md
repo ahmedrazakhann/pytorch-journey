@@ -3,3 +3,5 @@ Tensors Exercises: https://github.com/udacity/deep-learning-v2-pytorch/blob/mast
 How AI Powers Self-Driving Tesla with Elon Musk and Andrej Karpathy: https://www.youtube.com/watch?v=FnFksQo-yEY
 
 Karpathy article: https://karpathy.github.io/2015/11/14/ai/
+
+Basics of Neural Networks: https://towardsdatascience.com/understanding-neural-networks-19020b758230/
