@@ -9,7 +9,8 @@ def transform_dataset(train_dataset_directory, test_dataset_directory):
         
         output:
         
-        In return you will get a transformed version of your images in Tensor, either flip (50% probability) and would scale down to size 64x64
+        In return you will get a transformed version of your images in Tensor, either flip (50% probability) and would scale down to size 64x64. 
+        and also the list of classes names present in the dataset.
     """
     data_transform = transforms.Compose([
         transforms.Resize(size=(64,64)), # reducing img pexels to a fix size.
@@ -29,7 +30,8 @@ def transform_dataset(train_dataset_directory, test_dataset_directory):
         target_transform=None
     )
     
-    return train_dataset, test_dataset
+    return train_dataset, test_dataset, train_dataset.classes
+
     
     
 
